@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="profile-section">
+      <nav class="navbar main-blue" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand pl10">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="../../icons/header-logo.jpg"><span class="has-text-white has-text-weight-semibold is-size-4">Scupd</span>
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start ">
+            <div class="navbar-item has-dropdown is-hoverable has-text-white">
+              <a class="navbar-link has-text-white">
+                Creators
+              </a>
+      
+              <div class="navbar-dropdown main-blue p-2 br10">
+                <a class="navbar-item has-text-white white-bot-border">
+                  Political Commentators
+                </a>
+                <a class="navbar-item has-text-white white-bot-border">
+                  Visual Artists
+                </a>
+                <a class="navbar-item has has-text-white white-bot-border">
+                  Video Bloggers
+                </a>
+                <a class="navbar-item has-text-white">
+                  Celebrities
+                </a>
+              </div>
+            </div>
+
+            <a class="navbar-item has-text-white">
+                Pricing
+            </a>
+          </div>
+          
+          <input id="headerSearch" class="input is-rounded mt-2" type="text" placeholder="Search Creators">
+      
+          <div class="navbar-end pr10">
+            <div class="navbar-item" id="login-box">
+              <div class="buttons">
+                <a class="has-text-white button main-blue" id="loginBtn">
+                  <strong>Login</strong>
+                </a>
+                <a class="button is-light is-rounded is-small main-blue-text">
+                  Register
+                </a>
+              </div>
+            </div>
+             <!-- signed in UI -->
+          <div class="navbar-item has-dropdown is-hoverable has-text-white" id="signedIn">
+            <a class="navbar-link has-text-white">
+              Account
+            </a>
+    
+            <div class="navbar-dropdown main-blue br10 p-1">
+              <a class="navbar-item has-text-white white-bot-border">
+                Home
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Profile
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Subscriptions
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Become a Creator
+              </a>
+              <a class="navbar-item has-text-white" >
+                Sign Out
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+          <!-- profile section -->
+          <section class="width80 my-5 br10">
+              <div class="columns box">
+                  <div class="column is-3">
+                    <ul id="profileActionList">
+                        <li class="mb-4 selected-tab">Edit Profile</li>
+                        <li class="my-4">Change Password</li>
+                        <li class="my-4">Payments & Payouts</li>
+                        <li class="my-4">Notifications</li>
+                        <li class="my-4">Privacy and Security</li>
+                    </ul>
+                    <div class="select width100" id="profileActionSelect">
+                    <select class="width100" name="" >
+                        <option value="">Edit Profile</option>
+                        <option value="">Change Password</option>
+                        <option value="">Payments & Payouts</option>
+                        <option value="">Notifications</option>
+                        <option value="">Privacy and Security</option>
+                    </select>
+                    </div>
+                    
+                  </div>
+                  <div class="column is-9 profile-div">
+                        <div class="cover-box mb-1">
+                            <h3 class="has-text-weight-semibold is-size-4 mb-1">Cover Photo</h3>
+                            <img class="br10 width80" src="https://picsum.photos/400" alt="">
+                            <label for="coverImageInput" style="color:dodgerblue;font-weight: 600;">Edit <input style="visibility: hidden;" type="file" name="" id="coverImageInput"></label>
+                        </div>
+                        <div class="cover-box mb-2">
+                            <h3 class="has-text-weight-semibold is-size-4 mb-1">Profile Photo</h3>
+                            <img class="br10 edit-profile-img" src="https://picsum.photos/200" alt="">
+                            <label for="profileImageInput" style="color:dodgerblue;font-weight: 600;">Edit <input style="visibility: hidden;" type="file" name="" id="profileImageInput"></label>
+                        </div>
+                        <div class="cover-box mb-4 mt-2">
+                            <h3 class="has-text-weight-semibold is-size-4 mb-1">Name</h3>
+                            <input class="input" type="text" placeholder="Text input" value="Mansur Asraf">
+                            <p class="has-text-grey is-size-7 mt-2" >We're big on real names around here, so people know who's who.</p>
+
+                        </div>
+                        <div class="cover-box mb-4"> 
+                            <div>
+                              <span style="float: right;">25</span>
+                                <h3 class="has-text-weight-semibold is-size-4 mb-1">Description</h3>
+                            </div>
+                            <textarea class="width100 is-size-6 textarea" name="" id="" cols="30" rows="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis cum, quod cupiditate voluptatem, iste ipsum velit atque quaerat ullam sequi molestias, eos saepe reiciendis maxime!
+                            </textarea>
+                        </div>
+                        <div class="cover-box mb-4">
+                            <h3 class="has-text-weight-semibold is-size-4 mb-1">Profession</h3>
+                            <div class="select width100">
+                            <select class="width100" name="" id="">
+                                <option value="">Political Commentators</option>
+                                <option value="">Visual Artists</option>
+                                <option value="">Video Bloggers</option>
+                                <option value="">Celebrities</option>
+                                <option value="">Photographer</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="cover-box mb-4">
+                            <h3 class="has-text-weight-semibold is-size-4 mb-1">Workplace</h3>
+                            <input class="input" type="text" placeholder="Text input" value="XYZ Company">
+                        </div>
+                        <div class="cover-box mb-4">
+                            <h3 class="has-text-weight-semibold is-size-4 mb-1">Location</h3>
+                            <input class="input" type="text" placeholder="Text input" value="New York, USA">
+                        </div>
+                        <div class="cover-box mb-4">
+                            <h3 class="has-text-weight-semibold is-size-4 mb-1">Personal Website</h3>
+                            <input class="input" type="text" placeholder="Text input" value="XYZ.com">
+                            <p class="has-text-grey is-size-7 mt-2">Your homepage, blog or company site.</p>
+                        </div>
+                        <div class="submit">
+                            <button class="button is-rounded px-5 main-blue">Save Profile</button>
+                        </div>
+                  </div>
+              </div>
+          </section>
+    </div>
+</body>
+</html>

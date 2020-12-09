@@ -1,0 +1,30 @@
+.curvyImg{
+    border-top-right-radius: 60%;
+    border-top-left-radius: 55%;
+    border-bottom-right-radius: 58%;
+}
+
+footer{
+    border-top:1px solid gainsboro;
+}
+
+#lang_select{
+    border:1px solid var(--main-blue);
+    color:var(--main-blue);
+}
+
+.join-icons{
+    padding:5px;
+    border:2px solid var(--main-blue);
+    border-radius: 50%;
+}
+
+@media (max-width:575px){
+    #langSel{
+        text-align: center !important;
+    }
+
+    #copyRight{
+        display: block;
+    }
+}

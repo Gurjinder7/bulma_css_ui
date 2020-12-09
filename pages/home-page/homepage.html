@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div>
+    <!-- NAVBAR -->
+    <nav class="navbar main-blue" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand pl10">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="../../icons/header-logo.jpg"><span class="has-text-white has-text-weight-semibold is-size-4">Scupd</span>
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start ">
+          <div class="navbar-item has-dropdown is-hoverable has-text-white">
+            <a class="navbar-link has-text-white">
+              Creators
+            </a>
+    
+            <div class="navbar-dropdown main-blue p-2 br10">
+              <a class="navbar-item has-text-white white-bot-border">
+                Political Commentators
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Visual Artists
+              </a>
+              <a class="navbar-item has has-text-white white-bot-border">
+                Video Bloggers
+              </a>
+              <a class="navbar-item has-text-white">
+                Celebrities
+              </a>
+            </div>
+          </div>
+
+          <a class="navbar-item has-text-white">
+              Pricing
+          </a>
+        </div>
+        
+        <input id="headerSearch" class="input is-rounded mt-2" type="text" placeholder="Search Creators">
+    
+        <div class="navbar-end pr10">
+          <div class="navbar-item" id="login-box">
+            <div class="buttons">
+              <a class="has-text-white button main-blue" id="loginBtn">
+                <strong>Login</strong>
+              </a>
+              <a class="button is-light is-rounded is-small main-blue-text">
+                Register
+              </a>
+            </div>
+          </div>
+           <!-- signed in UI -->
+        <div class="navbar-item has-dropdown is-hoverable has-text-white" id="signedIn">
+          <a class="navbar-link has-text-white">
+            Account
+          </a>
+  
+          <div class="navbar-dropdown main-blue br10 p-1">
+            <a class="navbar-item has-text-white white-bot-border">
+              Home
+            </a>
+            <a class="navbar-item has-text-white white-bot-border">
+              Profile
+            </a>
+            <a class="navbar-item has-text-white white-bot-border">
+              Subscriptions
+            </a>
+            <a class="navbar-item has-text-white white-bot-border">
+              Become a Creator
+            </a>
+            <a class="navbar-item has-text-white" >
+              Sign Out
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Section 1 -->
+      <section>
+          <div class="columns width80">
+              <div class="column is-half">
+                <h3 class="has-text-weight-semibold is-size-3 mt-5"> Unleash your Imagination</h3>
+                <p>Connect with your biggest fans and <br> followers by starting a direct relationship. <br>
+                    Offer a subscription service that <br> generates predictable, recurring revenue <br> 
+                    from your creative work.
+                </p>
+                <button class="button main-blue is-rounded is-uppercase mt-3">Get started</button>
+              </div>
+              <div class="column is-half">
+                  <img src="https://picsum.photos/500" class="br10" alt="">
+
+              </div>
+          </div>
+      </section>
+
+      <!-- join us -->
+      <section class="mt-5 py-5 mb-5">
+          <h3 class="has-text-centered has-text-weight-semibold is-size-3 mb-2">Why Join Us?</h3>
+          <div class="columns width80 pb-5">
+              <div class="column">
+                <img src="../../icons/dollar-sign.svg" class="join-icons" alt="icon">
+                <p class="has-text-weight-semibold is-size-5">Monetize your content</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem modi dolores repellendus accusamus odit illo aperiam voluptatem minus similique maiores obcaecati atque assumenda tempore, culpa esse aliquam rerum sit aspernatur?</p>
+              </div>
+              <div class="column">
+                <img src="../../icons/users.svg" class="join-icons" alt="icon">
+                <p class="has-text-weight-semibold is-size-5">Build your community</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem modi dolores repellendus accusamus odit illo aperiam voluptatem minus similique maiores obcaecati atque assumenda tempore, culpa esse aliquam rerum sit aspernatur?</p>
+              </div>
+              <div class="column">
+                <img src="../../icons/trending-up.svg" class="join-icons" alt="icon">
+                <p class="has-text-weight-semibold is-size-5">Increase popularity</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem modi dolores repellendus accusamus odit illo aperiam voluptatem minus similique maiores obcaecati atque assumenda tempore, culpa esse aliquam rerum sit aspernatur?</p>
+
+              </div>
+          </div>
+      </section>
+
+      <!-- community section -->
+      <section class="has-background-dark has-text-white mt-5 py-5">
+        <h3 class="has-text-centered has-text-weight-semibold is-size-3 has-text-white">Our Community</h3>
+        <div class="columns width80">
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Sarah Manning</h3>
+              <p class="has-text-weight-light has-text-centered">Celebrity</p>
+            </div>
+          </div>
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3 ">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Cecilia Huang</h3>
+              <p class="has-text-weight-light has-text-centered">Visual Artist</p>
+            </div>
+          </div>
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Broklyn Miles</h3>
+              <p class="has-text-weight-light has-text-centered">Photographer</p>
+            </div>
+          </div>
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Emilia Bloom</h3>
+              <p class="has-text-weight-light has-text-centered">Celebrity</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns width80">
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Sarah Manning</h3>
+              <p class="has-text-weight-light has-text-centered">Celebrity</p>
+            </div>
+          </div>
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3 ">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Cecilia Huang</h3>
+              <p class="has-text-weight-light has-text-centered">Visual Artist</p>
+            </div>
+          </div>
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Broklyn Miles</h3>
+              <p class="has-text-weight-light has-text-centered">Photographer</p>
+            </div>
+          </div>
+          <div class="column p-5">
+            <div>
+              <figure class="image pt-3 pb-3">
+                <img src="https://picsum.photos/400" class="br10">
+              </figure>
+              <h3 class="has-text-weight-medium has-text-centered is-size-5">Emilia Bloom</h3>
+              <p class="has-text-weight-light has-text-centered">Celebrity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- people says section -->
+      <section class="mt-5 py-5">
+        <div class="columns width80 pb-5">
+          <div class="column">
+              <h3 class="has-text-weight-semibold is-size-3 mb-2">What They Said?</h3>
+              <blockquote>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi ab illo rerum? Quibusdam amet nobis eum error tempore architecto!"
+              </blockquote>
+              <h3 class="is-size-5 has-text-weight-semibold">Mansur Asraf</h3>
+              <p class="is-size-7 has-text-grey">Photographer</p>
+          </div>
+          <div class="column">
+            <img class="pt-5 curvyImg"  src="https://picsum.photos/250" alt="">
+          </div>
+        </div>
+      </section>
+      
+      <!-- footer -->
+      <footer class="width80 mt-5 pt-5">
+        <div class="columns">
+          <div class="column">
+            <!-- <img src="../../icons/footer-logo.jpg" alt=""> -->
+            <span class="mx-2 has-text-weight-medium is-size-7 has-text-grey">Terms</span>
+            <span class="mx-2 has-text-weight-medium is-size-7 has-text-grey">Privacy policy</span>
+            <span class="mx-2 has-text-weight-medium is-size-7 has-text-grey">Cookies</span>
+            <span class="mx-2 has-text-weight-medium is-size-7 has-text-grey">Ads info</span>
+            <span class="mx-2 has-text-weight-medium is-size-7 has-text-grey" id="copyRight">&#169; 2020 scupd, Inc.</span>
+          </div>
+          <div class="column has-text-right" id="langSel">
+            <div class="select is-rounded has-text-info">
+              <select id="lang_select" style="border: 1px solid dodgerblue;
+              color: dodgerblue;">
+                <option class="has-text-info">Language: English</option>
+                <option>Language: Spanish</option>
+              </select>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+
+
+
+    </div>
+</body>
+</html>

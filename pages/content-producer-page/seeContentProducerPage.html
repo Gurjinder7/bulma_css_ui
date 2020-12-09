@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="producer.css">
+</head>
+<body>
+    <div>
+        <!-- NAVBAR -->
+    <nav class="navbar main-blue" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand pl10">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="../../icons/header-logo.jpg"><span class="has-text-white has-text-weight-semibold is-size-4">Scupd</span>
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start ">
+            <div class="navbar-item has-dropdown is-hoverable has-text-white">
+              <a class="navbar-link has-text-white">
+                Creators
+              </a>
+      
+              <div class="navbar-dropdown main-blue p-2 br10">
+                <a class="navbar-item has-text-white white-bot-border">
+                  Political Commentators
+                </a>
+                <a class="navbar-item has-text-white white-bot-border">
+                  Visual Artists
+                </a>
+                <a class="navbar-item has has-text-white white-bot-border">
+                  Video Bloggers
+                </a>
+                <a class="navbar-item has-text-white">
+                  Celebrities
+                </a>
+              </div>
+            </div>
+
+            <a class="navbar-item has-text-white">
+                Pricing
+            </a>
+          </div>
+          
+          <input id="headerSearch" class="input is-rounded mt-2" type="text" placeholder="Search Creators">
+      
+          <div class="navbar-end pr10">
+            <div class="navbar-item" id="login-box">
+              <div class="buttons">
+                <a class="has-text-white button main-blue" id="loginBtn">
+                  <strong>Login</strong>
+                </a>
+                <a class="button is-light is-rounded is-small main-blue-text">
+                  Register
+                </a>
+              </div>
+            </div>
+             <!-- signed in UI -->
+          <div class="navbar-item has-dropdown is-hoverable has-text-white" id="signedIn">
+            <a class="navbar-link has-text-white">
+              Account
+            </a>
+    
+            <div class="navbar-dropdown main-blue br10 p-1">
+              <a class="navbar-item has-text-white white-bot-border">
+                Home
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Profile
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Subscriptions
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Become a Creator
+              </a>
+              <a class="navbar-item has-text-white" >
+                Sign Out
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main profile cover -->
+      <section class="width80 p2">
+          <div class="columns box br10 my-3 px-0 py-1" id="cover-mobile">
+              <div class="column is-two-fifths" id="cover-info">
+                <div class="columns is-mobile">
+                    <div class="column is-two-fifths">
+                        <img class="edit-profile-img br10" src="../../icons/222.jpg" alt="">
+                    </div>
+                    <div class="column is-three-fifths align-self-end">
+                      <button class="button is-info is-rounded is-outlined mb-2">Edit Profile</button>
+                    </div>
+                </div>
+                <h3 class="has-text-weight-semibold is-size-3">Mansur Asraf</h3>
+                <p class="has-text-justified">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem non, consequatur asperiores reiciendis odit architecto vitae libero nam veritatis nostrum.</p>
+                <ul class="my-3">
+                    <li class="columns is-gapless mb-0 is-mobile">
+                        <div class="column is-1">
+                          <img src="../../icons/briefcase.svg" alt="">
+                        </div>
+                        <div class="column is-11">
+                          <p class="has-text-grey">Photographer</p>
+                        </div>
+                    </li>
+                    <li class="columns is-gapless mb-0 is-mobile">
+                        <div class="column is-1">
+                          <img  src="../../icons/home.svg" alt="">
+                        </div>
+                        <div class="column is-11">
+                          <p class="has-text-grey">XYZ Company</p>
+                        </div>
+                    </li>
+                    <li class="columns is-gapless mb-0 is-mobile">
+                        <div class="column is-1">
+                          <img  src="../../icons/map-pin.svg" alt="">
+                        </div>
+                        <div class="column is-11">
+                          <p class="has-text-grey">New York, USA</p>
+                        </div>
+                    </li>
+                    <li class="columns is-gapless mb-0 is-mobile">
+                        <div class="column is-1">
+                          <img src="../../icons/globe.svg" alt="">
+                        </div>
+                        <div class="column is-11">
+                          <p class="main-blue-text has-text-weight-semibold">www.mansurasraf.com</p>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+              <div class="column is-three-fifths" id="coverImgBox" >
+                  <img class="cover-image br10" id="coverImg" src="https://picsum.photos/500/300" alt="">
+              </div>
+          </div>
+      </section>
+      <section class="width80">
+        <div class="columns">
+          <!-- suggestion for you -->
+
+          <div class="column is-4">
+            <div class="followers-box">
+            
+              <!-- NO followers -->
+              <div class="no-followers-box box br10">
+                    <h3 class="has-text-weight-medium">0 Following</h3>
+                    <p class="has-text-grey">You are not subscribed to any <span class="main-blue-text has-text-weight-semibold">creators</span></p>
+              </div>
+              <!-- Div with followers -->
+              <div class="followers box br10 pb-2">
+                <div class="bot-border pb-3">
+                  <span style="float: right;" class="main-blue-text has-text-weight-medium">See All</span>
+                  <h3><span class="has-text-weight-semibold">46</span> Following </h3>
+                </div>
+                <ul>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Amanda Bone</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Broklyn Miles</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Cecilia Huang</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Muhammad Kadafi</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Emilie Bloom</span></li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="creators-you-love">
+              <!-- no creators -->
+              <div class="no-creators-box box br10 my-3 ">
+                <h3 class="has-text-weight-medium">0 Creators you love</h3>
+                <p class="has-text-grey">Find the <span class="main-blue-text has-text-weight-semibold">creators</span> that pique your interests</p>
+              </div>
+
+              <!-- div with creators -->
+              <div class="creators-box box br10 pb-2">
+                <div class="bot-border pb-3">
+                  <span style="float: right;" class="main-blue-text has-text-weight-medium">See All</span>
+                  <h3><span class="has-text-weight-semibold">46</span> Creators you love </h3>
+                </div>
+                <ul>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Amanda Bone</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Broklyn Miles</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Cecilia Huang</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Muhammad Kadafi</span></li>
+                  <li class="my-3 grid18"><img class="user-img-cards br5" src="https://picsum.photos/50" alt=""><span>Emilie Bloom</span></li>
+
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="suggestion-box box br10 my-3 pb-2">
+              <div class="bot-border pb-3">
+                <span style="float: right;" class="main-blue-text has-text-weight-medium">See All</span>
+                <h3><span class="has-text-weight-light">Suggestion for you </h3>
+              </div>
+              <ul>
+                <li class="my-3">
+                  <div class="grid162">
+                    <div class="">
+                      <img class="user-img-cards br5" src="https://picsum.photos/50" alt="">
+                    </div>
+                    <div class="">
+                      <p class="has-text-weight-semibold mb-0">Amanda Rose</p>
+                      <p class="has-text-grey is-size-7">Photographer</p>
+                    </div>
+                    <div class="">
+                      <button class="button is-info is-rounded is-outlined">Subscribe</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="my-3">
+                  <div class="grid162">
+                    <div class="">
+                      <img class="user-img-cards br5" src="https://picsum.photos/50" alt="">
+                    </div>
+                    <div class="">
+                      <p class="has-text-weight-semibold mb-0">Amanda Rose</p>
+                      <p class="has-text-grey is-size-7">Photographer</p>
+                    </div>
+                    <div class="">
+                      <button class="button is-info is-rounded is-outlined">Subscribe</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="my-3">
+                  <div class="grid162">
+                    <div class="">
+                      <img class="user-img-cards br5" src="https://picsum.photos/50" alt="">
+                    </div>
+                    <div class="">
+                      <p class="has-text-weight-semibold mb-0">Amanda Rose</p>
+                      <p class="has-text-grey is-size-7">Photographer</p>
+                    </div>
+                    <div class="">
+                      <button class="button is-info is-rounded is-outlined">Subscribe</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+                
+            </div>
+
+          </div>
+          <div class="column is-8">
+            <div class="new-post box br10 p10 pt-2">
+              <div class="new-post-header grid18 bot-border py-2">
+                <img class="user-img-cards br5" src="https://picsum.photos/50" alt="">
+                <input class="width100 py-2" id="post-input" type="text" placeholder="What's happening?">
+              </div>
+              <div class="py-2">
+                <div class="columns">
+                  <div class="column align-self">
+                    <span class="mx-2 post-icons"><img src="../../icons/video.svg" alt="" class="post-icons"> Video</span>
+                    <span class="mx-2"><img src="../../icons/image.svg" alt="" class="post-icons"> Picture</span>
+                    <span class="mx-2" ><img src="../../icons/mic.svg" alt="" class="post-icons"> Audio</span>
+                  </div>
+                  <div class="column has-text-right align-self">
+                    <button class="button is-info is-small is-rounded px-5" id="postBtn">Post</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- a post -->
+            <div class="user-post box br10 pb-0">
+              <div class="post-header grid112">
+                <div class="img-box">
+                    <img class="user-img-cards br5" src="https://picsum.photos/50" class="user-img-cards" alt="">
+                </div>
+                <div class="titles">
+                    <p class="main-blue-text has-text-weight-semibold">Mansur Asraf</p>
+                    <p class="has-text-grey is-size-7">September 9 at 11::22PM</p>
+                </div>
+              </div>
+              <div class="post-content bot-border">
+                <div class="content mb-0">
+                  <div class="text has-text-justified">
+                    <p class="is-size-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rerum incidunt! Illo est odio explicabo molestias vitae quis blanditiis ab?</p>
+                  </div>
+                  <div class="img-video ">
+                    <img class="width100 post-images" src="https://picsum.photos/250" alt="">
+                  </div>
+
+                </div>
+                <div class="stats mb-2 mt-1">
+                  <p class="has-text-grey is-size-7"><span>48 Likes</span> &#9900; <span>2 dislikes</span> &#9900; <span>152 comments</span></p>
+
+                </div>
+
+              </div>
+              <div class="comment-section">
+                <div class="columns  pt-2 is-mobile">
+                  <div class="column is-2-desktop is-one-third-mobile">
+                    <p><img src="../../icons/thumbs-up.svg" class="post-icons" alt=""><span class="ml-1 has-text-grey">Like</span></p>
+                  </div>
+                  <div class="column is-2-desktop is-one-third-mobile">
+                    <p><img src="../../icons/thumbs-down.svg" class="post-icons" alt=""><span class="ml-1 has-text-grey">Dislike</span></p>
+                  </div>
+                  <div class="column is-8-desktop is-one-third-mobile">
+                    <p><img src="../../icons/message-circle.svg" alt="" class="post-icons"><span class="ml-1 has-text-grey">Comment</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- become a creator component -->
+            <div class="box br10 my-2">
+              <div class="has-text-centered">
+                <img class="post-images" src="../../icons/222.jpg" alt="">
+              </div>
+              <div class="has-text-centered">
+                <h3 class="has-text-weight-medium is-size-5 mb-2">Become a Creator</h3>
+                <p class="is-size-6">Build a membership for your fans and get paid to create on your own terms.</p>
+                <button class="button main-blue is-rounded is-medium my-3"> Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <!-- subscribe for unlock -->
+    </div>
+
+    <!-- post modal -->
+    <div class="modal" id="postModal">
+      <div class="modal-background"></div>
+      <div class="modal-card modal-width">
+        <header class="modal-card-head has-background-white no-border">
+          <p class="modal-card-title">Create Post</p>
+          <button class="delete main-blue" aria-label="close" id="closeModal"></button>
+        </header>
+        <section class="modal-card-body ">
+          <div class="modal-content">
+              <div class="body-header columns is-mobile">
+                <div class="column is-1">
+                  <img class="user-img-cards br5" src="https://picsum.photos/50" alt="">
+                </div>
+                <div class="column is-11">
+                  <select name="" id="" class="py-1 no-border">
+                    <option value=""><img src="../../icons/user-2.svg" alt="" class=""> Anyone</option>
+                    <option value=""><img src="../../icons/lock.svg" alt=""> only friends</option>
+                    <option value=""><img src="../../icons/slash.svg" alt=""> None</option>
+                  </select>
+                </div>
+              </div>
+              <div class="text-box">
+                <!-- <textarea class="textarea width94" placeholder="e.g. Hello world"></textarea> -->
+                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum exercitationem expedita cumque asperiores nostrum autem.</p> -->
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, doloremque! Facilis minima, doloremque eius quae veniam quisquam quos qui tempora possimus magnam tenetur sit fugit quidem tempore modi nam praesentium!
+              </div>
+          </div>
+        </section>
+        <footer class="modal-card-foot has-background-white">
+          <div class="width100">
+            <div class="">
+              <span class="mx-2 "><img src="../../icons/video.svg" alt="" class="post-icons"> Video</span>
+              <span class="mx-2"><img src="../../icons/image.svg" alt="" class="post-icons"> Picture</span>
+              <span class="mx-2" ><img src="../../icons/mic.svg" alt="" class="post-icons"> Audio</span>
+              <button class="button is-info is-rounded is-small px-5" style="float:right" id="postBtn">Post</button>
+
+            </div>
+            <!-- <div class="column has-text-right is-5 is-one-third-mobile">
+              <button class="button is-info is-rounded is-small px-5" id="postBtn">Post</button>
+            </div> -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById('postBtn').addEventListener('click', function(){
+        document.getElementById('postModal').classList.add('is-active');
+      })
+
+      document.getElementById('closeModal').addEventListener('click', function(){
+        document.getElementById('postModal').classList.remove('is-active');
+      })
+
+      // navbar toggle js
+      document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+#post-input{
+    border:none;
+}
+
+#post-input:focus{
+    outline:none;
+}
+
+#post-input::placeholder{
+    color:gainsboro;
+    font-weight: 600;
+    font-size: 1.5rem;
+    box-shadow: none !important;
+    outline: none;
+}
+
+body{
+    background: #FCFCFF;
+}
+
+.width94{
+    max-width:94% !important;
+}
+
+/* post modal styles */
+.modal-width{
+    width:60% !important;
+}
+
+.modal-card select{
+    background:#F4F9FF;
+    color:#027AFF;
+}
+
+.modal-card select:focus{
+    outline:none;
+}
+
+
+@media (max-width:575px){
+    .modal-width{
+        width:94% !important;
+    }
+
+    #coverImg{
+        display: none;
+    }
+
+    #coverImgBox{
+        display: none;
+    }
+
+    #cover-mobile{
+        padding:0px !important;    
+    }
+
+    #cover-info{
+        padding-bottom: 1px !important;
+    }
+}
+/* modal styles */
+.no-border{
+    border:none !important;
+}

@@ -1,0 +1,61 @@
+.filter-button{
+    border-radius: 5px !important;
+    border:1px solid gainsboro;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+
+}
+
+.filter-selected{
+    background: #ECEBEB;
+    color:#586075;
+}
+
+.gridForRadio{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-gap:1rem;
+}
+
+.fit-content{
+    height: fit-content;
+}
+
+/* #filterBar{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+} */
+
+#sortForMobile{
+    display: none;
+}
+
+@media (max-width:575px){
+    #resultDiv{
+        margin:auto 0px !important;
+    }
+
+    #filterBar{
+        overflow-x: scroll;
+        overflow-y:hidden;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #sortForMobile{
+        display: block;
+    }
+
+    #sortForDesktop{
+        display:none;
+    }
+
+    .box{
+        margin-bottom: 10px !important;
+    }
+}

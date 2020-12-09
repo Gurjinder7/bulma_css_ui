@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div>
+      <nav class="navbar main-blue" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand pl10">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="../../icons/header-logo.jpg"><span class="has-text-white has-text-weight-semibold is-size-4">Scupd</span>
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start ">
+            <div class="navbar-item has-dropdown is-hoverable has-text-white"> 
+              <a class="navbar-link has-text-white">
+                Creators
+              </a>
+      
+              <div class="navbar-dropdown main-blue p-2 br10">
+                <a class="navbar-item has-text-white white-bot-border">
+                  Political Commentators
+                </a>
+                <a class="navbar-item has-text-white white-bot-border">
+                  Visual Artists
+                </a>
+                <a class="navbar-item has has-text-white white-bot-border">
+                  Video Bloggers
+                </a>
+                <a class="navbar-item has-text-white">
+                  Celebrities
+                </a>
+              </div>
+            </div>
+
+            <a class="navbar-item has-text-white">
+                Pricing
+            </a>
+          </div>
+          
+          <input id="headerSearch" class="input is-rounded mt-2" type="text" placeholder="Search Creators">
+      
+          <div class="navbar-end pr10">
+            <div class="navbar-item" id="login-box">
+              <div class="buttons">
+                <a class="has-text-white button main-blue" id="loginBtn">
+                  <strong>Login</strong>
+                </a>
+                <a class="button is-light is-rounded is-small main-blue-text">
+                  Register
+                </a>
+              </div>
+            </div>
+             <!-- signed in UI -->
+          <div class="navbar-item has-dropdown is-hoverable has-text-white" id="signedIn">
+            <a class="navbar-link has-text-white">
+              Account
+            </a>
+    
+            <div class="navbar-dropdown main-blue br10 p-1">
+              <a class="navbar-item has-text-white white-bot-border">
+                Home
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Profile
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Subscriptions
+              </a>
+              <a class="navbar-item has-text-white white-bot-border">
+                Become a Creator
+              </a>
+              <a class="navbar-item has-text-white" >
+                Sign Out
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+          <!-- filters -->
+          <section class="my-3 width80" id="filterBar">
+            <button class="button is-small is-outlined filter-button mr-2 filter-selected">All</button>
+            <button class="button is-small is-outlined filter-button mx-2 ">Political Commentators</button>
+            <button class="button is-small is-outlined filter-button mx-2 ">Visual Artists</button>
+            <button class="button is-small is-outlined filter-button mx-2 ">Video Bloggers</button>
+            <button class="button is-small is-outlined filter-button mx-2 ">Celebrities</button>
+            <button class="button is-small is-outlined filter-button mx-2 ">Photographer</button>
+          </section>
+
+          <!-- result section -->
+          <section class="width80 mt-3">
+              <div class="columns mt-3">
+                  <div class="box br10 column is-one-quarter fit-content">
+                    <div id="sortForDesktop">
+                      <h4 class="is-size-6 mb-5 bot-border pb-2">Sort by</h4>
+                      <div class="sort-buttons has-text-weight-light">
+                          <div class="control my-3 ">
+                            <label class="radio gridForRadio">
+                                <span >Following</span>
+                                <input type="radio" name="answer">
+                              </label>
+                          </div>
+                          <div class="control my-3">
+                            <label class="radio gridForRadio">
+                                <span>Popular</span>
+                                <input type="radio" name="answer">
+                              </label>
+                          </div>
+                          <div class="control my-3">
+                            <label class="radio gridForRadio">
+                                <span>Recent</span>
+                                <input type="radio" name="answer">
+                              </label>
+                          </div>
+                      </div>
+                      </div>
+                      <div id="sortForMobile">
+                        <div class="select width100">
+                          <select name="" id="" class="main-blue-text width100">
+                            <option value="">Popular</option>
+                            <option value="">Following</option>
+                            <option value="">Recent</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="column mx-4" id="resultDiv">
+                    <h3 class="has-text-weight-semibold is-size-4"> 1360 Creators Found</h3>
+                    <div class="results mt-4">
+                        <div class="box br10 columns is-mobile my-3 py-2">
+                            <div class="column is-1-desktop is-2-mobile  p-2">
+                                <img src="https://picsum.photos/50" class="br5" alt="">
+                            </div>
+                            <div class="column is-9-desktop is-7-mobile">
+                                <p class="has-text-weight-semibold">Amanda Rose</p>
+                                <p class="has-text-grey is-size-7">@amanda.rose <span>&#9900; Photographer</span></p>
+                            </div>
+                            <div class="column is-2-desktop is-3-mobile">
+                                <button class="button is-info is-rounded is-small">Subscribed</button>
+                            </div>
+                        </div>
+                        <div class="box br10 columns is-mobile my-3 py-2">
+                          <div class="column is-1-desktop is-2-mobile  p-2">
+                              <img src="https://picsum.photos/50" class="br5" alt="">
+                          </div>
+                          <div class="column is-9-desktop is-7-mobile">
+                              <p class="has-text-weight-semibold">Blake Lively</p>
+                              <p class="has-text-grey is-size-7">@Blake.lively <span>&#9900; Video Blogger</span></p>
+                          </div>
+                          <div class="column is-2-desktop is-3-mobile">
+                              <button class="button is-info is-rounded is-small is-outlined">Subscribe</button>
+                          </div>
+                      </div>
+                       
+                    </div>
+              </div>
+              </div>
+            
+          </section>
+    </div>
+    
+</body>
+</html>

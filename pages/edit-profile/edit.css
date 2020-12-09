@@ -1,0 +1,46 @@
+.profile-section{
+    background: var(--main-tinted-blue);
+}
+.selected-tab{
+    color:var(--main-blue);
+    font-weight: 600;
+}
+
+.cover-box{
+    width:80%;
+}
+
+.profile-div{
+    border-left:1px solid gainsboro;
+}
+
+.bot-border{
+    border-bottom: 1px solid gainsboro;
+}
+
+#profileActionSelect{
+    display: none;
+}
+
+@media (max-width:575px){
+
+    .cover-box{
+        width:100%;
+    }
+
+    #profileActionSelect{
+        display: block;
+    }
+
+    #profileActionList{
+        display: none;
+    }
+    
+    .profile-div{
+        background:var(--main-tinted-blue);
+        border:none;
+    }
+
+
+
+}
